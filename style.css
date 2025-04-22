@@ -1,0 +1,125 @@
+/* Base styles */
+body {
+  background: #F7F9FC;
+  color: #333;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+}
+h1 {
+  color: #2E2E2E;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+h2 {
+  color: #7ECE90;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Card style */
+.main-card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  text-align: center;  /* Ajouté pour centrer le texte */
+}
+
+.card-white {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  text-align: justify;  /* Ajouté pour centrer le texte */
+}
+
+/* Image */
+.img-circle {
+  display: block;
+  margin: 0 auto 20px auto; 
+  width: 120px;
+  height: 120px;
+  object-fit: cover; 
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.btn-blue {
+  display: block;  /* Ajouté pour que le bouton soit un élément de type bloc */
+  background-color: #6B72E1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;  /* Ajouté pour centrer le bouton horizontalement */
+}
+
+.btn-blue:hover {
+  background-color: #5058c9;
+}
+
+
+/* Inline social icons */
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+.list-inline li {
+  display: inline;
+  margin-right: 15px;
+}
+.list-inline a {
+  font-size: 24px;
+  color: #6B72E1;
+  transition: color 0.3s ease;
+}
+.list-inline a:hover {
+  color: #5058c9;
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .btn-blue {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
